@@ -1,2 +1,0 @@
-c# to js :
-@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model, Newtonsoft.Json.Formatting.Indented));

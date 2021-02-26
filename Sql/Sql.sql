@@ -38,4 +38,27 @@ BEGIN
 END	
 GO
 
---============================ CREATED STORED PROCEDURE ===========================
+--============================ CREATED STORED PROCEDURE END ===========================
+--============================ TRANSACTION ===========================
+-- =============================================
+-- Author: Truong Chung Toan
+-- Create date: 19/10/2020
+-- Description:	
+-- =============================================
+  BEGIN TRAN
+        BEGIN TRY	
+
+            COMMIT 
+        END TRY
+        BEGIN CATCH
+            ROLLBACK
+            DECLARE @Msg NVARCHAR(500) = ERROR_MESSAGE()
+            RAISERROR(@Msg, 16, 1)
+        END CATCH
+
+
+--============================ CREATED STORED PROCEDURE END ===========================
+
+-- ========== FORMAT ================
+ FORMAT( hd.TongCong, 'C', 'vi-vn') AS TongCong,
+ 

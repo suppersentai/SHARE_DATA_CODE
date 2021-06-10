@@ -1,0 +1,11 @@
+// android
+Step 1: Thêm file Splash_screen.xml vào drawble android. ----- chú ý logo trong file Splash_screen
+Step 2: Thêm file SplashActivity.cs vào project android . ngang với mainActiviti.cs.
+step 3:  thêm đoạn style vào file  //Resource/value/style.xml
+ <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+		  <item name="android:windowBackground">@drawable/splash_screen</item>
+		  <item name="android:windowNoTitle">true</item>
+		  <item name="android:windowFullscreen">true</item>
+		  <item name="android:windowContentOverlay">@null</item>
+		  <item name="android:windowActionBar">true</item>
+	</style>

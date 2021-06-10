@@ -1,0 +1,6 @@
+
+1: Lỗi trên  Macbook 
+ERROR:  XARSD7023:“/Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Tooling.targets (5,5):
+        Error XARSD7023: System.IO.DirectoryNotFoundException: Could not find a part of the path
+        '/Users/roshan/Library/Android/sdk'.
+FIX: Chay cau lenh tren may terminal Mac : “mkdir -p ~/Library/Android/sdk”

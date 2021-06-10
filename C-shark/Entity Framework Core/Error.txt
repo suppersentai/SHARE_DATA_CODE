@@ -1,2 +1,0 @@
-1 Error Name:  Asp.Net Core: There is already an object named 'AspNetRoles' in the database
-2 Error Fix : Xóa database hiện tại, sau đó đổi tên database , chạy lại add-migration (Xóa DataBase.EnsureCreate)

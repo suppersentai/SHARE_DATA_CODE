@@ -1,4 +1,9 @@
 
+-- Tìm kiếm không dấu trong sql cần set COLLATE  column search sang SQL_Latin1_General_CP1_CS_AS.
+-- Lưu ý: Có thể set cả database COLLATE sang SQL_Latin1_General_CP1_CS_AS
+ALTER TABLE dbo.STUDENTS
+ALTER COLUMN FullName VARCHAR(500) COLLATE SQL_Latin1_General_CP1_CI_AI;
+
 -- Split string
 CREATE FUNCTION [dbo].[split](
           @delimited NVARCHAR(MAX),

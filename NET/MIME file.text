@@ -1,0 +1,59 @@
+ public struct FileMimeType
+        {
+            public static readonly string[] MsOfficeExtensions = {
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", // xlsx
+                "application/vnd.ms-excel.sheet.macroEnabled.12",// xlsm
+                "application/vnd.ms-excel",
+                "application/vnd.ms-excel.template.macroEnabled.12",// xltm,
+                "application/vnd.ms-excel.addin.macroEnabled.12",  //"xlam"      
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",//docx
+                "application/vnd.ms-word.document.macroEnabled.12",//docm
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.template",//dotx
+                "application/vnd.ms-word.template.macroEnabled.12",//dotm
+                "application/vnd.openxmlformats-officedocument.presentationml.presentation",//pptx
+                "application/vnd.ms-powerpoint.presentation.macroEnabled.12",//pptm
+                "application/vnd.openxmlformats-officedocument.presentationml.template",//potx
+                "application/vnd.ms-powerpoint.template.macroEnabled.12",//potm
+                "application/vnd.openxmlformats-officedocument.presentationml.slideshow",// ppsx
+                "application/vnd.ms-powerpoint.slideshow.macroEnabled.12",//ppsm
+                                                                          };
+            public static readonly string[] ZipFileExtensions = { "application/zip"/*zip*/};
+
+            public static readonly string[] FileExtensionsSupported = { 
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",//docx
+                "application/vnd.ms-word.document.macroEnabled.12",//docm
+                "application/pdf",//pdf
+                "image/png",//png
+                "image/bmp",//bmp
+                "image/jpeg",//jpeg, jpg
+                "image/gif",//gif
+                "image/tiff",//tif
+                "application/vnd.openxmlformats-officedocument.presentationml.presentation",//pptx
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", // xlsx
+                "application/vnd.ms-excel.sheet.macroEnabled.12",// xlsm
+                "application/vnd.ms-outlook",//msg
+                "application/vnd.oasis.opendocument.spreadsheet",//ods
+                "text/plain",//txt
+                "text/csv",//csv
+                "text/sgml",//sgml
+                "application/rtf",//rtf
+                "application/octet-stream",//pbix, acl
+                "application/zip",//zip
+                "text/html",//html
+                "text/html",//htm
+                "application/vnd.ms-visio.drawing, application/vnd.ms-visio.viewer",//vsdx
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",//xml
+                "application/vnd.ms-xpsdocument",//xps
+                 };
+
+            public static readonly string[] DCRMFileExtensionsSupported = {
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document",//docx
+                "application/vnd.ms-word.document.macroEnabled.12",//docm
+                "application/pdf",//pdf
+                "application/vnd.openxmlformats-officedocument.presentationml.presentation",//pptx
+                "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", // xlsx
+                "application/vnd.ms-excel.sheet.macroEnabled.12",// xlsm
+                "application/vnd.ms-outlook",//msg
+                   };
+            public static readonly string PFile = "pfile";
+        }

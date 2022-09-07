@@ -22,6 +22,18 @@ CREATE FUNCTION [dbo].[split](
 		go
 		select * from dbo.split('toi-la-toaj','-')
 		
+-- ========= Show time select - in message tab if time < 1 second =========		
+ SET STATISTICS IO ON;
+ GO
+ SET STATISTICS TIME ON;
+ GO
+-- ========== remove cache sql =======================
+CHECKPOINT; 
+GO 
+DBCC DROPCLEANBUFFERS; 
+GO
+
+		
 		
 --============================ PAGINNATION ===========================
 SELECT *

@@ -1,0 +1,3 @@
+-- Create patch file (Diff file) 
+git diff --patch > FileName.patch -> or FileName.Diff
+git apply

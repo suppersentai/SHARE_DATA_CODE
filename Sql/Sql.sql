@@ -1,4 +1,15 @@
+-- check data exist in a partison
 
+Select OBJECT_NAME(object_id) as TableName,SUM(rows) as NumRows,index_id
+From sys.partitions p
+Inner Join sys.sysobjects o
+on p.object_id = o.id
+Where index_id in (0,1) --and o.name = 'Users'
+And o.type = 'U'
+Group By object_id,index_id
+Order By NumRows Desc
+
+	
 --- tìm  giá trị trên all table 1
 execute SearchAllTables 'DCVFM TB: Tai khoan Quy Huu tri bo sung'
 

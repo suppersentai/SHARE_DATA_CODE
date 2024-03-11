@@ -1,3 +1,7 @@
+-- Check slow  query
+	select top 100 * from ReportProcessors order by  CreationTime desc
+
+
 -- check data exist in a partison
 
 Select OBJECT_NAME(object_id) as TableName,SUM(rows) as NumRows,index_id
